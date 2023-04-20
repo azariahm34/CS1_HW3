@@ -16,3 +16,25 @@
 
 #Do the same as HW 2 Q2 but now have the user add and remove as many grocieries as they want. (You must use loops).
 #Same as before, print out the list after they have added everything. If they remove groceries, reprint out the list. 
+
+#Azariah Muhammad
+#3/20/2023
+#HW3Q3
+keepGoing= 'yes'
+groceryList= []
+while keepGoing == "yes":
+  gorcery= input("Add a grocery item!: ")
+  groceryList.append(gorcery)
+  print("Your groceries:\n ", groceryList)
+  keepGoing= input("Would you like to add another item?"+ "(Enter yes):")
+
+keepGoing= 'yes'
+while keepGoing == "yes":
+  gorcery= input("remove a grocery item!: ")
+  groceryList.remove(gorcery)
+  print("Your groceries:\n ", groceryList)
+  keepGoing= input("Would you like to remove another item?"+ "(Enter yes):")
+print("Here are your groceries!", groceryList)
+
+print(" Have a nice day!")
+
